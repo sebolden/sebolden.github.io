@@ -1,6 +1,3 @@
-body {
-      overflow: hidden;
-}
 
 a {
 	color: #e60077;
@@ -10,14 +7,6 @@ a {
 
 a:hover {
 	color:#ff7373;
-}
-
-.gridwrap {
-      display: grid;
-      grid-template-columns: 1.1fr 3fr;
-      height: 100vh;
-      width: 100vw;
-      overflow: hidden;
 }
 
 .babygrid {
@@ -31,7 +20,9 @@ a:hover {
       padding-left: 80px;
       padding-right: 150px;
 	overflow-y: scroll;
-	padding-bottom:200px;
+      padding-bottom:200px;
+      display:table
+
 
 }
 
@@ -47,8 +38,11 @@ a:hover {
 }
 
 .header {
-	padding-left: 100px;
-	text-align: right !important;
+      width: 250px;
+      float: left;
+      text-align: right !important;
+      padding-left: 80px;
+
 }
 
 h1,
