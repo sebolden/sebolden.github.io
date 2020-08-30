@@ -1,12 +1,6 @@
-@media only screen and (min-width: 800px) {
-      .header {
-            padding-left:400px;
-      
-      }
-          }
-    
+
 body {
-      max-width: 100vh;
+      max-width: 100%;
 }
 
 a {
@@ -26,29 +20,29 @@ a:hover {
 
 
 .body {
-      padding-left: 80px;
-      padding-right: 100px;
+      margin-left: 400px;
+      margin-right: 100px;
 	overflow-y: scroll;
-      padding-bottom:200px;
+      margin-bottom:200px;
       display:table
 }
 
 .babysection {
-      padding: 20px;
+      margin: 20px;
 }
 
 #bodydiv {
       max-width: 700px;
 }
 #about {
-      padding-top: 20px;
+	margin-top: 55px;
 }
 
 .header {
       width: 240px;
       float: left;
       text-align: right !important;
-      padding-left: 80px;
+      margin-left: 80px;
 
 }
 
@@ -68,10 +62,9 @@ li {
 }
 
 h1 {
-	padding-top: 50px;
+	margin-top: 50px;
 	font-weight: 900;
       font-size: 2.7em;
-      margin-top: 1px;
 	margin-bottom: 1px;
 	
 
@@ -157,7 +150,7 @@ li {
 
 
 #textcontainer {
-      padding-left: 40px;
+      margin-left: 100px;
 }
 
 #distinctions, h4 {
