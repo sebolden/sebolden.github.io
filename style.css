@@ -1,3 +1,11 @@
+@media only screen and (min-width: 800px) {
+      .header {
+            padding-left:400px;
+      
+      }
+          }
+    
+
 body {
       max-width: 100vh;
 }
