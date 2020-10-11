@@ -198,12 +198,6 @@ BELOW CODE (navbar) is modified from:
 https://codepen.io/karimbalaa/pen/WboBBY/
 */
 
-#cmon {
-      float: left;
-      clear: both;
-      margin-top: 6px;
-
-}
 
 #navbar {
       background:#fff;
@@ -227,7 +221,14 @@ https://codepen.io/karimbalaa/pen/WboBBY/
 }
     
 
-    
+#cmon {
+      float: left;
+      clear: both;
+      margin-top: 6px;
+
+}
+
+
     .btn{
           
       color:#000;
