@@ -1,0 +1,177 @@
+publications: 
+- authors: Stromer-Galley, J., Rossini, P., Hemsley, J., <b>Bolden, S.E.</b>, McKernan, B.
+  date: (2021)
+  title: Political Messaging Over Time - A Comparison of U. S. Presidential Candidate Facebook Posts and Tweets in 2016 and 2020. 
+  journal: Social Media + Society.
+  doi: https://doi.org/10.1177/20563051211063465
+- authors: McKernan, B., Stromer-Galley, J., Korsunska, A., <b>Bolden, S.E.</b>, Rossini, P., Hemsley, J.
+  date: (<i>Forthcoming</i>)
+  title: A human-centered design approach to creating tools to help journalists monitor digital political ads - Insights and challenges.  
+  journal: Digital Journalism.
+
+conferences:
+- title: Communicating the Facebook political Ad Library - Data and design challenges
+  date: 02-2021 
+  org: Computation & Journalism Conference
+  location: Virtual
+  coauths: Co-authors - Dr. Jennifer Stromer-Galley, Dr. Brian McKernan, Dr. Jeff Hemsley, Ania Korsunska
+- title: Does anyone talk about the issues anymore? The 2016 U.S. presidential candidates' messaging on Facebook and Twitter
+  date: 10-2020
+  org: Association of Internet Researchers
+  location: Virtual
+  coauths: Co-authors - Dr. Jennifer Stromer-Galley, Dr. Jeff Hemsley, Dr. Patricia Rossini, Alex Smith
+- title: Classifying political social media messages with BERT
+  date: 07-2020
+  org: 6th International Conference on Computational Social Science
+  location: Virtual
+  coauths: Co-authors - Dr. Jennifer Stromer-Galley, Jay Kachhadia, Shloak Gupta, Ania Korsunska
+- title: PoliBERT - Classifying political social media messages with BERT
+  date: 07-2020
+  org: SBP-BRIMS
+  location: Washington DC
+  coauths: Co-authors - Dr. Jennifer Stromer-Galley, Jay Kachhadia, Shloak Gupta, Ania Korsunska
+- title: Platformed precarity - Negotiations of uncertainty on r/Braincels and r/TheRedPill
+  date: 01-2020
+  org: Research on Online Political Hostility Conference
+  location: Aarhus University, Aarhus DK
+- title: Platformed precarity - r/TheRedPill’s response to the threat of de-platforming
+  date: 11-2019
+  org: Intersectionality in/and the Digital Humanities
+  location: Syracuse University, Syracuse NY
+
+public:
+- title: Illuminating 2020 Message Topic Report
+  link: https://news.illuminating.ischool.syr.edu/2020/12/19/illuminating-2020-message-topic-report/
+  date: December 2020
+  org: Illuminating (blog)
+  location: Syracuse University, Syracuse NY
+  coauths: Co-authors - Ania Korsunska, Dr. Jennifer Stromer-Galley, Dr. Brian McKernan, Dr. Patricia Rossini, Dr. Jeff Hemsley, Wenzhe Yang
+- title: Illuminating 2020 Report - The 2020 General Election Campaign Advertising on Facebook
+  link: https://news.illuminating.ischool.syr.edu/2020/12/04/illuminating-2020-report-the-2020-general-election-campaign-advertising-on-facebook/
+  date: December 2020
+  org: Illuminating (blog)
+  location: Syracuse University, Syracuse NY
+  coauths: Co-authors - Dr. Jennifer Stromer-Galley, Dr. Brian McKernan, Dr. Patricia Rossini, Dr. Jeff Hemsley, Ania Korsunska
+- title: Facebook’s election advertising restrictions - an overview
+  link: https://news.illuminating.ischool.syr.edu/2020/11/11/facebooks-election-advertising-restrictions-an-overview/
+  date: November 2020
+  org: Illuminating (blog)
+  location: Syracuse University, Syracuse NY
+- title: Facebook Political Advertising Transparency Report
+  link: https://news.illuminating.ischool.syr.edu/2020/10/06/facebook-political-advertising-transparency-report/
+  date: October 2020
+  org: Illuminating (blog)
+  location: Syracuse University, Syracuse NY
+  coauths: Co-authors - Dr. Jennifer Stromer-Galley, Dr. Brian McKernan
+
+research:
+- title: Graduate Research Assistant
+  date: 06-2018 — 04-2021
+  location: Syracuse University, Syracuse NY
+  org: Illuminating Project
+- title: Undergraduate Research Assistant
+  date: 09-2015 — 12-2015
+  location: University of Massachusetts Boston, Boston MA
+  org: Department of Women’s & Gender Studies
+- title: Undergraduate Research Assistant
+  date: 05-2014 — 06-2015
+  location: University of Massachusetts Boston, Boston MA
+  org: Honors College
+
+visualizations:
+- title: Magazine cover (network visualization)
+  date: 03-2019
+  location: Syracuse University, Syracuse NY
+  org: Innovations magazine
+
+teaching:
+- title: Guest Instructor
+  date: 12-2020
+  location: Brooklyn Public Library, Brooklyn NY
+  org: Information Literacy Instruction for Library Professionals
+- title: Teaching Assistant
+  date: Fall 2020
+  location: Syracuse University, Syracuse NY
+  org: IST 800 - Social Networks
+- title: Guest Lecturer
+  date: Fall 2020
+  location: Syracuse University, Syracuse NY
+  org: IST 776 - Research Methods in Information Science and Technology
+- title: Guest Lecturer
+  date: Fall 2019
+  location: Syracuse University, Syracuse NY
+  org: IST 671 - Foundations of Research Methods in Information Studies
+- title: Graduate Teaching Assistant, Guest Lecturer
+  date: Spring 2018
+  location: Syracuse University, Syracuse NY
+  org: CRS 287 - Foundations of Inquiry in Human Communication
+- title: Guest Lecturer
+  date: Spring 2018
+  location: Syracuse University, Syracuse NY
+  org: CRS 423 - Contemporary Rhetorics of Gender & Sexuality
+- title: Graduate Instructor
+  date: Spring 2017, Fall 2017
+  location: Syracuse University, Syracuse NY
+  org: CRS 325 - Presentational Speaking
+- title: Guest Lecturer
+  date: Fall 2017
+  location: Syracuse University, Syracuse NY
+  org: CRS 316 - Introduction to Visual Culture
+- title: Recitation Teaching Assistant
+  date: Fall 2016
+  location: Syracuse University, Syracuse NY
+  org: CRS 181 - Concepts & Perspectives in Communication Studies
+- title: Undergraduate Teaching Assistant, Guest Lecturer
+  date: Spring 2016
+  location: University of Massachusetts Boston, Boston MA
+  org: WGS 210 - Gender and the Body
+
+grants:
+- title: Special Research Grant 
+  date: Spring 2018
+  location: Syracuse University, Syracuse NY 
+  org: Department of Communication and Rhetorical Studies 
+- title: Creative Opportunity Grant 
+  date: Spring 2018
+  location: Syracuse University, Syracuse NY 
+  org: College of Visual & Performing Arts 
+- title: Creative Opportunity Grant 
+  date: Winter 2017
+  location: Syracuse University, Syracuse NY 
+  org: Department of Communication and Rhetorical Studies 
+
+service:
+- title: Academic Integrity Panelist
+  date: 08-2020 — present
+  location: Syracuse University, Syracuse NY
+  org: Center for Learning and Student Success 
+- title: First-Year Associate
+  date: 09-2020 — 06-2021
+  location: Syracuse University, Syracuse NY
+  org: Women in Science and Engineering Future Professoriate Program
+- title: First-Year Mentor 
+  date: 08-2019 — 08-2020
+  location: Syracuse University, Syracuse NY
+  org: School of Information Studies
+- title: Faculty Committee Representative 
+  date: 09-2018 — 08-2019
+  location: Syracuse University, Syracuse NY
+  org: School of Information Studies
+- title: First-Year Mentor 
+  date: 08-2017 — 08-2018
+  location: Syracuse University, Syracuse NY
+  org: Department of Communication and Rhetorical Studies
+- title: Judge - White-Denison Speech Competition
+  date: Spring & Fall 2017
+  location: Syracuse University, Syracuse NY
+  org: Department of Communication and Rhetorical Studies
+
+honors:
+- title: Kingston-Mann Student Achievement in Diversity/Inclusion Scholarship
+  date: 2016
+  location: University of Massachusetts Boston, Boston MA
+  org: Submission - “Mainstream Media Representations of Violence in Ferguson, Missouri.”
+- title: Honors College Classroom Leadership Award
+  date: 2015
+  location: University of Massachusetts Boston, Boston MA
+  org: Course - "National Narratives of War and Peace in a Changing World"

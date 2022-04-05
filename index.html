@@ -1,140 +1,152 @@
-<!DOCTYPE html>
+---
+layout: default
+---
 
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="./css/style.css">
-
-				    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-		<!-- Bootstrap core CSS -->
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-		<!-- Material Design Bootstrap -->
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
-		<!-- JQuery -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<!-- Bootstrap tooltips -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-		<!-- Bootstrap core JavaScript -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-		<!-- MDB core JavaScript -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-						    
-	
-	</head>
-	<body>
-	<!--Main Navigation-->
-<header>
-
-	<nav class="navbar fixed-top navbar-expand-sm navbar-dark scrolling-navbar">
-	  <a class="navbar-brand h" href="./index.html"><strong>Brace Belden</strong></a>
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-		<li class="nav-item">
-			<a class="nav-link icons-sm btn-email" href= "mailto: bruce@boldencolor.com"><i class="fas fa-envelope pr-1"> </i></a>
-		    </li>
+<h1>Curriculum Vitae</h1>
+<br>
+<p>
+  My goals as a researcher and educator are to find ways to: make the world more habitable for marginalized individuals and communities; make conditions and forms of oppression more intelligible, visible, and reproachable; elevate and highlight forms of activism and advocacy; unravel the connections between identity, power, and digital technologies; and visualize information in creative and engaging ways.</p>
+ <p>
+  My current research, using a critical theoretical lens and mixed qualitative/computational methods, examines what it means for an individual’s or group’s access to a digital platform to come under threat. Looking at social media platforms such as Reddit, Tumblr, and TikTok, I'm especially interested in how marginalized online users and communities navigate isssues pertaining to de-platforming, harrassment, and other threats to platform stability/safety. 
+</p>
     
-		<li class="nav-item ">
-		  <a class="nav-link icons-sm btn-li" href="https://www.linkedin.com/in/brucebolden/"><i class="fab fa-linkedin-in pr-1"> </i> </a>
-		</li>
-		<li class="nav-item">
-		  <a class="nav-link icons-sm btn-yt" href="https://www.youtube.com/user/colorpro888"><i class="fab fa-youtube pr-1"> </i></a>
-		</li>
-	    </ul>
-	  </div>
-	</nav>
-    
-	<div class="view intro-2" style="">
-	  <div class="full-bg-img">
-		  <img class = 'bgimg' src = './media/LAMO.jpg'/>
-	    <div class="mask  flex-center">
-		<div class="container text-center white-text wow fadeInUp">
-			<h1 class = "h bb ">Brace Belden</h1>
+<h2>Education</h2>
 
-		</div>
-	    </div>
-	  </div>
-	</div>
-    
-    </header>
-    <!--Main Navigation-->
-    
-    <!--Main Layout-->
-    <main class="text-center py-5">
-    
-	<div class="container">
-    
+<p>
+  <small>2018 - 2023 (expected)</small> <br />
+  <b>Ph.D., Information Science & Technology</b> <br />
+  Syracuse University - Syracuse, NY
+</p>
 
+<p>
+  <small>2016-2018 </small><br />
+  <b>M.A., Communication And Rhetorical Studies</b> <br />
+  Syracuse University - Syracuse, NY <br />
+</p>
 
-		<p class = "summary" align="justify">
-			
-			With 20+ years of exerpience as a Senior Colorist, Bruce has mastered color for over 30 feature projects, as well as television shows on networks such as ABC, CBS, and MTV. Bruce has experience with top post productions facilities in Los Angeles, Seattle, Portland, Atlanta, Boston, Hong Kong, Bangkok and Saigon. In tandem with his proven artistic sensibilities, Bruce has experience with a wide range today's digital technology, including most software used for color mastering. He is currently seeking opportunities as a final or supervising colorist. <br/><br/>			
-			<a href = "https://www.linkedin.com/in/brucebolden/"></a><button class="btn btn-sm blue-gradient waves-effect">View CV →</button></a>
+<p>
+  <small>2012-2016</small> <br />
+  <b>B.A., Sociology; B.A., Latin American & Iberian Studies</b> <br />
+  University of Massachusetts Boston - Boston, MA
+</p>
+<br />
+<h2>Publications</h2>
 
-			</p>
+{% for item in site.data.cv.publications %}
+<p>
+  {{ item.authors }}. {{ item.date }}. {{ item.title }}
+  <i>{{ item.journal }}</i>.
+  <a href="{{ item.doi }}" target="_blank">{{ item.doi }}</a>.
+</p>
 
+{% endfor %}
+<br />
+<h2>Conferences and Presentations</h2>
 
+{% for item in site.data.cv.conferences %}
+<p>
+  <small>{{ item.date }}, {{ item.location }}</small> <br />
+  <b>"{{ item.title }}"</b> <br />
+  {{ item.org }}<br />
+  {{ item.coauths }}
+</p>
+{% endfor %}
+<br />
+<h2>Public Scholarship</h2>
 
+{% for item in site.data.cv.public %}
+<p>
+  <small>{{ item.date }}, {{ item.location }}</small> <br />
+  <b>"{{ item.title }}"</b> <br />
+  {{ item.org }}<br />
+  {{ item.coauths }}
+</p>
+{% endfor %}
+<br />
+<h2>Research Work Experience</h2>
 
-	</div>
-    
+{% for item in site.data.cv.research %}
+<p>
+  <small>{{ item.date }}, {{ item.location }}</small> <br />
+  <b>{{ item.title }}</b> <br />
+  {{ item.org }}<br />
+</p>
+{% endfor %}
+<br />
+<h2>Visualizations</h2>
 
+{% for item in site.data.cv.visualizations %}
+<p>
+  <small>{{ item.date }}, {{ item.location }}</small> <br />
+  <b>{{ item.title }}</b> <br />
+  {{ item.org }}<br />
+</p>
+{% endfor %}
+<br />
+<h2>Teaching</h2>
 
+{% for item in site.data.cv.teaching %}
+<p>
+  <small>{{ item.date }}, {{ item.location }}</small> <br />
+  <b>{{ item.title }}</b> <br />
+  {{ item.org }}<br />
+</p>
+{% endfor %}
+<br />
 
+<h2>Grants</h2>
 
+{% for item in site.data.cv.grants %}
+<p>
+  <small>{{ item.date }}, {{ item.location }}</small> <br />
+  <b>{{ item.title }}</b> <br />
+  {{ item.org }}<br />
+</p>
+{% endfor %}
 
+<br />
+<h2>Service</h2>
 
+{% for item in site.data.cv.service %}
+<p>
+  <small>{{ item.date }}, {{ item.location }}</small> <br />
+  <b>{{ item.title }}</b> <br />
+  {{ item.org }}<br />
+</p>
+{% endfor %}
+<br />
 
+<h2>Honors & Awards</h2>
 
-	</div>
+{% for item in site.data.cv.honors %}
+<p>
+  <small>{{ item.date }}, {{ item.location }}</small> <br />
+  <b>{{ item.title }}</b> <br />
+  {{ item.org }}<br />
+</p>
+{% endfor %}
+<br />
 
+<h2>Skills</h2>
 
+<b>Methods</b>
+<ul>
+  <li>Content analysis</li>
+  <li>Rhetorical criticism</li>
+  <li>Social network analysis</li>
+  <li>Grounded theory</li>
+</ul>
 
-		</div>
+<b>Programming</b>
+<ul>
+  <li>R (advanced)</li>
+  <li>Python (intermediate)</li>
+  <li>JavaScript (beginner)</li>
+</ul>
 
-<div class = "bigscreenvid">
-		<div class = "vidsection">
-		<h2 class = "h vidtxt">commercial</h2>
-		<div class="embed-responsive embed-responsive-16by9">
-		    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zHOsoAxDCyM" allowfullscreen></iframe>
-		  </div>
-		</div>
-		<div class = "vidsection">
-
-		  <h2 class = "h vidtxt">feature</h2>
-		  <div class="embed-responsive embed-responsive-16by9">
-			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oJVa8eFBAIs" allowfullscreen></iframe>
-			
-		    </div>
-		</div>
-		<div class = "vidsection">
-
-		    <h2 class = "h vidtxt">editor</h2>
-		    <div class="embed-responsive embed-responsive-16by9">
-			  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yJmZrth-vtk" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>		
-
-
-		</main>
-    
-
-<!-- Footer -->
-<footer class="page-footer font-small">
-
-	<!-- Copyright -->
-	<div class="footer-copyright text-center py-3">© 2020 Copyright: Brace Belden	</div>
-	<!-- Copyright -->
-    
-    </footer>
-    <!-- Footer -->
-    
-		<script src="./js/script.js" async defer></script>
-	</body>
-</html>
+<b>Design</b>
+<ul>
+  <li>Data vizualization</li>
+  <li>Adobe Suite</li>
+  <li>HTML/CSS</li>
+</ul>
