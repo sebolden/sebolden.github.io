@@ -22,6 +22,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
+
+    <style>
+img {
+  border-radius: 50%;
+}
+
+
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -34,16 +42,17 @@
             <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
           {% endif %}
           <p>{{ site.description | default: site.github.project_tagline }}</p>
-          <img src="/assets/img/headshot.png" alt="Sarah Bolden headshot" >
 
             <p class="addr"><i class="fa-regular fa-envelope"></i>&nbsp;
               <a href="mailto:sebolden@syr.edu">sebolden@syr.edu</a> <br>
-<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" style="vertical-align:-0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5L12 0l12 9.5l-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14a7 7 0 0 0 0-14z" fill="currentColor"/></svg><a href="https://scholar.google.com/citations?user=l1yO0nsAAAAJ&hl=en&authuser=1">  
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" style="vertical-align:-0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5L12 0l12 9.5l-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14a7 7 0 0 0 0-14z" fill="currentColor"/></svg>
+<a href="https://scholar.google.com/citations?user=l1yO0nsAAAAJ&hl=en&authuser=1" target = "_blank">  
                   &nbsp;Google Scholar</a><br>
+                  
+                  <i class="fab fa-linkedin-in"></i></i>&nbsp;
+                    <a href="https://www.linkedin.com/in/boldense/" target = "_blank">LinkedIn</a> </p> 
 
-                  <i class="fas fa-briefcase"></i>&nbsp;
-                    <a href="/portfolio">Portfolio</a> </p> 
-
+                    
           {% include sidebar.html %}
 
         </header>
