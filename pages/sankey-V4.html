@@ -1,0 +1,2645 @@
+---
+layout: post
+permalink: /sankey-V4
+---
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <style>
+            #chartdiv {
+              width: 100%;
+              height: 1000px
+            }
+            
+            </style>
+            
+            <!-- Resources -->
+            <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+            <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+            <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+            
+            <!-- Chart code -->
+            <script>
+            am4core.ready(function() {
+            
+            // Themes begin
+            am4core.useTheme(am4themes_animated);
+            // Themes end
+            
+            var chart = am4core.create("chartdiv", am4charts.SankeyDiagram);
+            chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+            
+            chart.data = 
+            [
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone1-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone1-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone1-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone2-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone2-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone2-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone3-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone3-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone3-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone4-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone4-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone4-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone5-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone5-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone5-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone6-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone6-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone6-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone7-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone7-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone7-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone8-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone8-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone8-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone9-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone9-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone9-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone10-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone10-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone10-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone11-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone11-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone11-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone12-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone12-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone12-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone13-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone13-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone13-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone14-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone14-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone14-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone15-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone15-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone15-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone16-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone16-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone16-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone17-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone17-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone17-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone18-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone18-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone18-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone19-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone19-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone19-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone20-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone20-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone20-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone21-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone21-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone21-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone22-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone22-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone22-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone23-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone23-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone23-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone24-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone24-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone24-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone25-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone25-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone25-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone26-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone26-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone26-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone27-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone27-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone27-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone28-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone28-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone28-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone29-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone29-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone29-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone30-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone30-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone30-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone31-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone31-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone31-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone32-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone32-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone32-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone33-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone33-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone33-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone34-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone34-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone34-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone35-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone35-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone35-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone36-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone36-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone36-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone37-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone37-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone37-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone38-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone38-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone38-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone39-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone39-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone39-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone40-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone40-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone40-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone41-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone41-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone41-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone42-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone42-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone42-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone43-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone43-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone43-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone44-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone44-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone44-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone45-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone45-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone45-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone46-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone46-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone46-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone47-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone47-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone47-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "deferiprone48-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone48-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone48-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone49-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone49-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone49-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone50-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone50-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone50-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Literature analysis / Meta-analysis",
+   value: 1,
+   id: "deferiprone51-1"
+ },
+ {
+   from: "Literature analysis / Meta-analysis",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone51-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone51-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone52-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "deferiprone52-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "deferiprone52-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone53-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "deferiprone53-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "deferiprone53-3"
+ },
+ {
+   from: "deferiprone",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "deferiprone54-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "deferiprone54-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "deferiprone54-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Preclinical research",
+   value: 1,
+   id: "Deferiprone55-1"
+ },
+ {
+   from: "Preclinical research",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "Deferiprone55-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "Deferiprone55-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Preclinical research",
+   value: 1,
+   id: "Deferiprone56-1"
+ },
+ {
+   from: "Preclinical research",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "Deferiprone56-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "No",
+   value: 1,
+   id: "Deferiprone56-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Preclinical research",
+   value: 1,
+   id: "Deferiprone57-1"
+ },
+ {
+   from: "Preclinical research",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "Deferiprone57-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "Deferiprone57-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Other",
+   value: 1,
+   id: "Deferiprone58-1"
+ },
+ {
+   from: "Other",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "Deferiprone58-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "Deferiprone58-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Other",
+   value: 1,
+   id: "Deferiprone59-1"
+ },
+ {
+   from: "Other",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "Deferiprone59-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "No",
+   value: 1,
+   id: "Deferiprone59-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Other",
+   value: 1,
+   id: "Deferiprone60-1"
+ },
+ {
+   from: "Other",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "Deferiprone60-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "Deferiprone60-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Preclinical research",
+   value: 1,
+   id: "Deferiprone61-1"
+ },
+ {
+   from: "Preclinical research",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "Deferiprone61-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "Deferiprone61-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Preclinical research",
+   value: 1,
+   id: "Deferiprone62-1"
+ },
+ {
+   from: "Preclinical research",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "Deferiprone62-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "No",
+   value: 1,
+   id: "Deferiprone62-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Preclinical research",
+   value: 1,
+   id: "Deferiprone63-1"
+ },
+ {
+   from: "Preclinical research",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "Deferiprone63-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "Deferiprone63-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Other",
+   value: 1,
+   id: "Deferiprone64-1"
+ },
+ {
+   from: "Other",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "Deferiprone64-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "Deferiprone64-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Other",
+   value: 1,
+   id: "Deferiprone65-1"
+ },
+ {
+   from: "Other",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "Deferiprone65-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "No",
+   value: 1,
+   id: "Deferiprone65-3"
+ },
+ {
+   from: "Deferiprone",
+   to: "Other",
+   value: 1,
+   id: "Deferiprone66-1"
+ },
+ {
+   from: "Other",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "Deferiprone66-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "No",
+   value: 1,
+   id: "Deferiprone66-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus67-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus67-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus67-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus68-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus68-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus68-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus69-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus69-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus69-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus70-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus70-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus70-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus71-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus71-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus71-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus72-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus72-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus72-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus73-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus73-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus73-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus74-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus74-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus74-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus75-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus75-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus75-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus76-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus76-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus76-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus77-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus77-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus77-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus78-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus78-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus78-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus79-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus79-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus79-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus80-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus80-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus80-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus81-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus81-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus81-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus82-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus82-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus82-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus83-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus83-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus83-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus84-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus84-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus84-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus85-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus85-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus85-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus86-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus86-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus86-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus87-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus87-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus87-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus88-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus88-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus88-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus89-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus89-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus89-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus90-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus90-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus90-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus91-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus91-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus91-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus92-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus92-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus92-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus93-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus93-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus93-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus94-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus94-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus94-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus95-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus95-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus95-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus96-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus96-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus96-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus97-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus97-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus97-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus98-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus98-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus98-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus99-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus99-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus99-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus100-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus100-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus100-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus101-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus101-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus101-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus102-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus102-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus102-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus103-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus103-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus103-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus104-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus104-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus104-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus105-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus105-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus105-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus106-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus106-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus106-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus107-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus107-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus107-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus108-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus108-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus108-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus109-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus109-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus109-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus110-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus110-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus110-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus111-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus111-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus111-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus112-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus112-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus112-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus113-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus113-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus113-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus114-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus114-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus114-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus115-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus115-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus115-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus116-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus116-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus116-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus117-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus117-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus117-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus118-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus118-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus118-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus119-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus119-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus119-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus120-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus120-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus120-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus121-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus121-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus121-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus122-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus122-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus122-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus123-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus123-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus123-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus124-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus124-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus124-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus125-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus125-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus125-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus126-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus126-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus126-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus127-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus127-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus127-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus128-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus128-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus128-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   value: 1,
+   id: "sirolimus129-1"
+ },
+ {
+   from: "Analyzing patient's medical data to identify drugs that look promising based on off-label use",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus129-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus129-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus130-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus130-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus130-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus131-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus131-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus131-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus132-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus132-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus132-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus133-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus133-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus133-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus134-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus134-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus134-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus135-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus135-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus135-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus136-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "sirolimus136-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus136-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus137-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "sirolimus137-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus137-3"
+ },
+ {
+   from: "sirolimus",
+   to: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   value: 1,
+   id: "sirolimus138-1"
+ },
+ {
+   from: "Looking at similar diseases and what drugs are utilized or are promising for that patient population",
+   to: "Drug to provide significant improvement in quality of life (QOL)",
+   value: 1,
+   id: "sirolimus138-2"
+ },
+ {
+   from: "Drug to provide significant improvement in quality of life (QOL)",
+   to: "Yes",
+   value: 1,
+   id: "sirolimus138-3"
+ },
+ {
+   from: "alpelisib",
+   to: "Translational research",
+   value: 1,
+   id: "alpelisib139-1"
+ },
+ {
+   from: "Translational research",
+   to: "Drug to receive FDA approval for your rare disease",
+   value: 1,
+   id: "alpelisib139-2"
+ },
+ {
+   from: "Drug to receive FDA approval for your rare disease",
+   to: "No",
+   value: 1,
+   id: "alpelisib139-3"
+ },
+ {
+   from: "alpelisib",
+   to: "Translational research",
+   value: 1,
+   id: "alpelisib140-1"
+ },
+ {
+   from: "Translational research",
+   to: "Drug to be freely available to patients off label with safety / efficacy data",
+   value: 1,
+   id: "alpelisib140-2"
+ },
+ {
+   from: "Drug to be freely available to patients off label with safety / efficacy data",
+   to: "No",
+   value: 1,
+   id: "alpelisib140-3"
+ },
+ {
+   from: "alpelisib",
+   to: "Translational research",
+   value: 1,
+   id: "alpelisib141-1"
+ },
+ {
+   from: "Translational research",
+   to: "Drug to provide significant reduction in symptoms",
+   value: 1,
+   id: "alpelisib141-2"
+ },
+ {
+   from: "Drug to provide significant reduction in symptoms",
+   to: "No",
+   value: 1,
+   id: "alpelisib141-3"
+ }
+]
+            ;
+            
+            let hoverState = chart.links.template.states.create("hover");
+            hoverState.properties.fillOpacity = 0.6;
+            
+            chart.dataFields.fromName = "from";
+            chart.dataFields.toName = "to";
+            chart.dataFields.value = "value";
+            
+            chart.links.template.propertyFields.id = "id";
+            chart.links.template.colorMode = "solid";
+            chart.links.template.fill = new am4core.InterfaceColorSet().getFor("alternativeBackground");
+            chart.links.template.fillOpacity = 0.1;
+            chart.links.template.tooltipText = "";
+            
+            // highlight all links with the same id beginning
+            chart.links.template.events.on("over", function(event){
+              let link = event.target;
+              let id = link.id.split("-")[0];
+            
+              chart.links.each(function(link){
+                if(link.id.indexOf(id) != -1){
+                  link.isHover = true;
+                }
+              })
+            })
+            
+            chart.links.template.events.on("out", function(event){  
+              chart.links.each(function(link){
+                link.isHover = false;
+              })
+            })
+            
+            // for right-most label to fit
+            chart.paddingRight = 30;
+            
+            // make nodes draggable
+            var nodeTemplate = chart.nodes.template;
+            nodeTemplate.inert = true;
+            nodeTemplate.readerTitle = "Drag me!";
+            nodeTemplate.showSystemTooltip = true;
+            nodeTemplate.width = 40;  // CHANGE NODE WIDTH
+            
+            // make nodes draggable
+            var nodeTemplate = chart.nodes.template;
+            nodeTemplate.readerTitle = "Click to show/hide or drag to rearrange";
+            nodeTemplate.showSystemTooltip = true;
+            nodeTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer
+            
+            }); // end am4core.ready()
+            </script>
+            
+            <!-- HTML -->
+            <div id="chartdiv"></div>
+                    
+        <script src="" async defer></script>
+    </body>
+</html>
