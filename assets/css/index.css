@@ -156,8 +156,10 @@ p {
 }
 
 .headshot {
-  height: 600px;
-  width: 600px;
+  border: 16px solid #4C5250;
+  width: 400px !important;
+  height: auto !important;
+
 }
 
 
@@ -209,6 +211,9 @@ h3 {
     object-fit: cover;
     z-index: -1 !important;
   }
+  .paddingXL {
+    padding-left: 10px;
+  }
 }
 
 
@@ -224,7 +229,7 @@ h3 {
   }
 
   .headshot {
-    height: 500px !important;
+    height: auto !important;
     width: 500px !important;
     margin-left: -100px !important;
   }

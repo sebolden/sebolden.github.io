@@ -23,6 +23,7 @@
   --cardboard: url("https://www.transparenttextures.com/patterns/cardboard.png");
   --noisy_grid: url("https://www.transparenttextures.com/patterns/noisy-grid.png");
   --accent_color: #0070d2;
+  --color_dark: #4C5250;
   --accent_font: basic-sans, sans-serif;
   --main_font: "new-reason", sans-serif;
 }
@@ -33,7 +34,7 @@ body {
 }
 .navlogo {
   font-size: 1.6rem !important;
-  color: #4e4e4e;
+  color: var(--color_dark);
   font-weight: 800 !important;
 }
 * {
@@ -61,7 +62,7 @@ body, p {
  */
 
  p, h1, h2, h3, h4, h5, h6, a, ol, li {
-  color: #4e4e4e;
+  color: var(--color_dark);
  }
  p, ol, li {
   font-family: var(--main_font);

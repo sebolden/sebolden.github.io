@@ -21,7 +21,7 @@ nav .logo_container {
 
 
 .navlogo, .navcv, .navportfolio {
-    color: #4e4e4e ;
+    color: var(--color_dark) ;
 }
 
 .navcv, .navportfolio {
@@ -89,7 +89,7 @@ nav .logo_container {
 }
 
 .navlogo, .navcv, .navportfolio {
-    color: #4e4e4e ;
+    color: var(--color_dark) ;
 }
 
 .navbar-nav .navcv:hover li {
