@@ -156,7 +156,7 @@ p {
 }
 
 .headshot {
-  border: 8px solid #000;
+  border: 8px solid #000 ;
   width: 400px !important;
   height: auto !important;
 
