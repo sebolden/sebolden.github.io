@@ -1,0 +1,130 @@
+
+.badge {
+
+    background-color: #F0F0F0;
+    color: #909090;
+  }
+    .cardcontainer {
+      margin-top: -500px !important;
+    }
+  
+    .lead {
+      margin-top: 60px;
+    }
+    .navbar {
+      margin-top: -48px !important;
+    }
+  
+  .contents {
+    font-size: 14px !important;
+  }
+  
+  .blackdot {
+    font-size: 8px;
+  }
+  .contenttitle {
+    text-decoration: none !important;
+  }
+  h1 {font-weight: 800 !important;
+    font-size: 5.3rem !important; }
+  
+
+/* Create three equal columns that floats next to each other */
+.column {
+    display: none; /* Hide columns by default */
+  }
+  
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  
+  /* Style the buttons */
+  .btn {
+  
+    display: inline-block;
+                      outline: none;
+                      cursor: pointer;
+                      padding: 0 16px;
+                      background-color: #fff;
+                      border-radius: 0.25rem;
+                      border: 1px solid #0070d2;
+                      color: #0070d2;
+                      font-size: 13px;
+                      line-height: 30px;
+                      font-weight: 400;
+                      text-align: center;
+                      :hover {
+                          background-color: #f4f6f9; 
+                      } 
+                  
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  .button-52:hover {
+    background-color: #0070d2;
+    color:#f4f6f9;
+  }
+  .btn:focus {
+    outline: 0 !important;
+  
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+  
+    display: inline-block;
+                      outline: none;
+                      cursor: pointer;
+                      padding: 0 16px;
+                      background-color: #0070d2;
+                      border-radius: 0.25rem;
+                      border: 1px solid #0070d2;
+                      color: #fff;
+                      font-size: 13px;
+                      line-height: 30px;
+                      font-weight: 400;
+                      text-align: center;
+                      :hover {
+                          background-color: #005fb2;  
+                          border-color: #005fb2;
+                      } 
+                  
+  }
+  .myBtnContainer button {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .itemtitle {
+    font-size: 2rem;
+  }
+  
+  .thisbtn {
+  
+    display: inline-block;
+                      outline: none;
+                      cursor: pointer;
+                      padding: 0 16px;
+                      background-color: #fff;
+                      border-radius: 0.25rem;
+                      border: 1px solid #dddbda;
+                      color: #0070d2;
+                      font-size: 13px;
+                      line-height: 30px;
+                      font-weight: 400;
+                      text-align: center;
+                      :hover {
+                          background-color: #f4f6f9; 
+                      } 
+                  
+  }

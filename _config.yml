@@ -1,15 +1,24 @@
+name: 'Sarah E. Bolden'
+# favicon: ''
 title: Sarah E. Bolden
 description: Ph.D. Candidate, Information Science and Technology, Syracuse University
 email: sebolden@syr.edu
 show_downloads: false
+permalink: /:title/
 color-scheme: auto
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jemoji
-  - jekyll-remote-theme
-remote_theme: BDHU/minimalist
+  # all posts
+include: ["_pages", "_posts"]
 
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: default
+      
 # You can find fonts from https://iconify.design or https://fontawesome.com. Below is just an example illustrating how to use custom icons
 
 # https://github.com/github/pages-gem/issues/399#issuecomment-301827749

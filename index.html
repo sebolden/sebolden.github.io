@@ -1,152 +1,52 @@
 ---
 layout: default
+title: "Home"
 ---
 
-<h1>Curriculum Vitae</h1>
-<br>
-<p>
-  My goals as a researcher and educator are to find ways to: make the world more habitable for marginalized individuals and communities; make conditions and forms of oppression more intelligible, visible, and reproachable; elevate and highlight forms of activism and advocacy; unravel the connections between identity, power, and digital technologies; and visualize information in creative and engaging ways.</p>
- <p>
-  My current research, using a critical theoretical lens and mixed qualitative/computational methods, examines what it means for an individual’s or group’s access to a digital platform to come under threat. Looking at social media platforms such as Reddit, Tumblr, and TikTok, I'm especially interested in how marginalized online users and communities navigate issues pertaining to de-platforming, harassment, and other threats to platform stability/safety. 
-</p>
-    
-<h2>Education</h2>
+{% include navbar.html %}
 
-<p>
-  <small>2018 - 2023 (expected)</small> <br />
-  <b>Ph.D., Information Science & Technology</b> <br />
-  Syracuse University - Syracuse, NY
-</p>
+<link href="{{site.baseurl}}/assets/css/index.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.typekit.net/xrn3fzv.css">
 
-<p>
-  <small>2016-2018 </small><br />
-  <b>M.A., Communication And Rhetorical Studies</b> <br />
-  Syracuse University - Syracuse, NY <br />
-</p>
+<div class="movethis">
+  <div class="row d-flex justify-content-center thisdiv">
+    <div class="paddingSM col-lg-6 mt-sm-5 mt-lg-0 col-sm-12 col-md-12 px-5">
+      <div class="paddingXL  mt-sm-5 mt-lg-0">
+        <div class="paddingXL  mt-sm-5 mt-lg-0">
+          <h1 class=" paddingXL name mb-0 pb-0">Sarah E. Bolden </h1>
+          <h2 class="paddingXL pb-2 mb-0">Researcher / Data scientist </h2>
+          <h3 class="paddingXL pb-2 mb-0  mt-3 "><b>Ph.D. Candidate</b>, Information Science & Technology, Syracuse
+            University</h3>
+          <h3 class="paddingXL mb-0"><b>M.A.</b>, Communication & Rhetorical Studies, Syracuse University</h3>
+          <h3 class="paddingXL mb-0"><b>Pronouns:</b> she/her/hers</h3>
+          &nbsp;
+          <p class="paddingXL  pb-4">
+            My work is driven by a deep curiosity about the intersections of identity, power, and digital technologies.
+            Using mixed methods (qualitative, computational, and visual), I aim to shed light on forms of oppression,
+            amplify activist voices and initiatives, and empower audiences to engage critically with digital
+            technologies.
+          </p>
+          <div id="myBtnContainer">
+            <a class="paddingXL" href="/cv.html"><button class="btn cvbtn">Curriculum Vitae</button></a>
+            <a class="paddingXL" href="/portfolio.html"><button class="btn portfoliobtn">Portfolio</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="headshot_bg">
+        <div class="imgdivdiv">
+          <div class="imgdiv">
+            <img class="headshot" src="/assets/img/sb-headshot.jpeg"
+              style="height: 50vh; width: 50vw; display: block; margin: auto; object-fit: contain;" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-<p>
-  <small>2012-2016</small> <br />
-  <b>B.A., Sociology; B.A., Latin American & Iberian Studies</b> <br />
-  University of Massachusetts Boston - Boston, MA
-</p>
-<br />
-<h2>Publications</h2>
-
-{% for item in site.data.cv.publications %}
-<p>
-  {{ item.authors }}. {{ item.date }}. {{ item.title }}
-  <i>{{ item.journal }}</i>.
-  <a href="{{ item.doi }}" target="_blank">{{ item.doi }}</a>
-</p>
-
-{% endfor %}
-<br />
-<h2>Conferences and Presentations</h2>
-
-{% for item in site.data.cv.conferences %}
-<p>
-  <small>{{ item.date }}, {{ item.location }}</small> <br />
-  <b>"{{ item.title }}"</b> <br />
-  {{ item.org }}<br />
-  {{ item.coauths }}
-</p>
-{% endfor %}
-<br />
-<h2>Public Scholarship</h2>
-
-{% for item in site.data.cv.public %}
-<p>
-  <small>{{ item.date }}, {{ item.location }}</small> <br />
-  <b>"{{ item.title }}"</b> <br />
-  {{ item.org }}<br />
-  {{ item.coauths }}
-</p>
-{% endfor %}
-<br />
-<h2>Research Work Experience</h2>
-
-{% for item in site.data.cv.research %}
-<p>
-  <small>{{ item.date }}, {{ item.location }}</small> <br />
-  <b>{{ item.title }}</b> <br />
-  {{ item.org }}<br />
-</p>
-{% endfor %}
-<br />
-<h2>Visualizations</h2>
-
-{% for item in site.data.cv.visualizations %}
-<p>
-  <small>{{ item.date }}, {{ item.location }}</small> <br />
-  <b>{{ item.title }}</b> <br />
-  {{ item.org }}<br />
-</p>
-{% endfor %}
-<br />
-<h2>Teaching</h2>
-
-{% for item in site.data.cv.teaching %}
-<p>
-  <small>{{ item.date }}, {{ item.location }}</small> <br />
-  <b>{{ item.title }}</b> <br />
-  {{ item.org }}<br />
-</p>
-{% endfor %}
-<br />
-
-<h2>Grants</h2>
-
-{% for item in site.data.cv.grants %}
-<p>
-  <small>{{ item.date }}, {{ item.location }}</small> <br />
-  <b>{{ item.title }}</b> <br />
-  {{ item.org }}<br />
-</p>
-{% endfor %}
-
-<br />
-<h2>Service</h2>
-
-{% for item in site.data.cv.service %}
-<p>
-  <small>{{ item.date }}, {{ item.location }}</small> <br />
-  <b>{{ item.title }}</b> <br />
-  {{ item.org }}<br />
-</p>
-{% endfor %}
-<br />
-
-<h2>Honors & Awards</h2>
-
-{% for item in site.data.cv.honors %}
-<p>
-  <small>{{ item.date }}, {{ item.location }}</small> <br />
-  <b>{{ item.title }}</b> <br />
-  {{ item.org }}<br />
-</p>
-{% endfor %}
-<br />
-
-<h2>Skills</h2>
-
-<b>Methods</b>
-<ul>
-  <li>Content analysis</li>
-  <li>Rhetorical criticism</li>
-  <li>Social network analysis</li>
-  <li>Grounded theory</li>
-</ul>
-
-<b>Programming</b>
-<ul>
-  <li>R (advanced)</li>
-  <li>Python (intermediate)</li>
-  <li>JavaScript (beginner)</li>
-</ul>
-
-<b>Design</b>
-<ul>
-  <li>Data vizualization</li>
-  <li>Adobe Suite</li>
-  <li>HTML/CSS</li>
-</ul>
+  </div>
+</div>
+<div class="container">
+ <img src="{{site.baseurl}}/assets/img/index/MohakaHorizontal.svg" class=" img-fluid MohakaHorizontal"/> 
+  <!-- <img src="{{site.baseurl}}/assets/img/index/Aare.svg" class=" img-fluid MohakaHorizontal" /> -->
+</div>

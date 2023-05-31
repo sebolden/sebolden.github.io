@@ -1,0 +1,256 @@
+body {
+  background-color: #fffbf2;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.icon {
+  width: 27px;
+  height: 27px;
+  margin-right: 10px;
+}
+
+body {
+  max-height: 100vh !important;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+
+}
+
+.thisdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+h1 {
+  font-family: basic-sans, sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: basic-sans, sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: var(--main_font);
+  font-size: .87rem !important;
+  font-weight: 400;
+
+}
+
+h3 b {
+  font-weight: 600 !important;
+}
+
+p {
+  font-size: 1rem !important;
+  font-family: "new-reason", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/* Style the buttons */
+.btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  border: 1px solid #4e4e4e;
+  color: #4e4e4e;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Add a grey background color on mouse-over */
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: var(--accent_color);
+  color: #f4f6f9;
+}
+
+.btn:focus {
+  outline: 0 !important;
+
+}
+
+
+/* Add a dark background color to the active button */
+.btn.active {
+
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  padding: 0 16px;
+  background-color: var(--accent_color);
+  border-radius: 0.25rem;
+  border: 1px solid var(--accent_color);
+  color: #fff;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+
+  :hover {
+    background-color: #005fb2;
+    border-color: #005fb2;
+  }
+
+}
+
+.myBtnContainer button {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+.headshot_bg {
+  height: 100vh !important;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BACKUP IMAGES? */
+/* 
+  https://images.unsplash.com/photo-1559142382-6fe8aaed14c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1335&q=80
+   */
+.imgdiv {
+  height: 650px !important;
+  width: 650px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 20px 13px;
+  outline: 0;
+}
+
+/* 
+  box-shadow: 3px -3px 17px 0px rgba(0,0,0,0.55) ;
+  -webkit-box-shadow: 3px -3px 17px 0px rgba(0,0,0,0.55) ;
+  -moz-box-shadow: 3px -3px 17px 0px rgba(0,0,0,0.55) ; */
+
+
+
+.name {
+  font-size: 5rem !important;
+}
+
+.headshot {
+  height: 600px;
+  width: 600px;
+}
+
+
+h3 {
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.MohakaHorizontal {
+  position: fixed;
+  bottom: -180px;
+  left: 0%;
+  width: 100vw !important;
+  height: auto;
+  object-fit: cover;
+  z-index: -1 !important;
+}
+
+@media screen and (max-width: 992px) {
+
+  .headshot,
+  .imgdiv,
+  .headshot_bg {
+    display: none !important;
+  }
+
+  .paddingSM {
+    margin-top: 150px !important;
+  }
+  .MohakaHorizontal {
+    position: fixed;
+    bottom: -40px;
+    left: 0%;
+    width: 100vw !important;
+    height: auto;
+    object-fit: cover;
+    z-index: -1 !important;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1399px) {
+  .MohakaHorizontal {
+    position: fixed;
+    bottom: -90px;
+    left: 0%;
+    width: 100vw !important;
+    height: auto;
+    object-fit: cover;
+    z-index: -1 !important;
+  }
+}
+
+
+
+@media screen and (min-width: 1400px) {
+
+  .paddingXL {
+    padding-left: 70px;
+  }
+
+  .portfoliobtn {
+    margin-left: -60px;
+  }
+
+  .headshot {
+    height: 500px !important;
+    width: 500px !important;
+    margin-left: -100px !important;
+  }
+
+  .movethis {
+    margin-right: -120px !important;
+  }
+
+
+  .MohakaHorizontal {
+    position: fixed;
+    bottom: -210px;
+    left: 0%;
+    width: 100vw !important;
+    height: auto;
+    object-fit: cover;
+    z-index: -1 !important;
+  }
+}
+
+.MohakaVertical {
+  position: fixed;
+  bottom: 0px;
+  left: -10px;
+  width: auto !important;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1 !important;
+}

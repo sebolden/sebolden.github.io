@@ -1,0 +1,160 @@
+
+/* CSS DIRECTORY
+	1. =GLOBAL
+  2. =NAVBAR
+  3. =DATA STUDIO
+  
+*/
+
+/* ===GLOBAL=== 
+
+    defines theme fonts;
+    defines assorted class-specific global styles
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  /* paper textures */
+  --project_paper: url("https://www.transparenttextures.com/patterns/project-paper.png");
+  --cardboard: url("https://www.transparenttextures.com/patterns/cardboard.png");
+  --noisy_grid: url("https://www.transparenttextures.com/patterns/noisy-grid.png");
+  --accent_color: #0070d2;
+  --accent_font: basic-sans, sans-serif;
+  --main_font: "new-reason", sans-serif;
+}
+
+body {
+  background-color: var(--roadmap_light) !important;
+  background-image: var(--noisy_grid);
+}
+.navlogo {
+  font-size: 1.6rem !important;
+  color: #4e4e4e;
+  font-weight: 800 !important;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0 !important;
+}
+
+/* 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sono', sans-serif;
+}
+
+body, p {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+ */
+
+ p, h1, h2, h3, h4, h5, h6, a, ol, li {
+  color: #4e4e4e;
+ }
+ p, ol, li {
+  font-family: var(--main_font);
+font-weight: 400;
+font-style: normal;
+ }
+
+
+/* h1,
+h2 {
+  font-weight: 600 !important;
+} */
+
+figcaption {
+  font-size: 11px;
+  margin-top: 0px;
+  margin-left: 2px;
+  padding-top: 5px;
+  font-style: italic;
+  text-align: center;
+}
+
+
+body {
+  min-height: 100vh !important;
+}
+
+body a {
+  color: var(--accent1);
+}
+
+.styledfont {
+  font-family: var(--accent_font) !important;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-size: 4.5rem;
+  font-family: var(--accent_font);
+font-weight: 400;
+font-style: normal;
+
+}
+h2 {
+  font-weight: 600;
+}
+
+body p,
+body li,
+body ol,
+ol li,
+ul li,
+li p,
+.textSmall {
+  font-size: .9em;
+
+}
+a {
+  font-family: var(--main_font);
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--main_font);
+  font-weight: 600;
+  font-style: normal;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+/* ===NAVBAR=== 
+
+    formats navbar;
+    replaces horizontal nav with single dropdown when screen size is below 66em
+
+*/
+
+/* general navbar formatting */
+.navbar {
+  background-color: #fff !important; 
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  height: 45px;
+
+}

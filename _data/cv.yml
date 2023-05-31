@@ -1,13 +1,13 @@
 publications: 
-- authors: McKernan, B., Stromer-Galley, J., Korsunska, A., <b>Bolden, S.E.</b>, Rossini, P., Hemsley, J.
-  date: (2022)
+- authors: McKernan, B., Stromer-Galley, J., Korsunska, A., <i>Bolden, S.E.</i>, Rossini, P., Hemsley, J.
+  date: (2023)
   title: A human-centered design approach to creating tools to help journalists monitor digital political ads - Insights and challenges.  
-  journal: Digital Journalism.
+  journal: Digital Journalism
   doi: https://doi.org/10.1080/21670811.2022.2064321 
-- authors: Stromer-Galley, J., Rossini, P., Hemsley, J., <b>Bolden, S.E.</b>, McKernan, B.
+- authors: Stromer-Galley, J., Rossini, P., Hemsley, J., <i>Bolden, S.E.</i>, McKernan, B.
   date: (2021)
   title: Political Messaging Over Time - A Comparison of U. S. Presidential Candidate Facebook Posts and Tweets in 2016 and 2020. 
-  journal: Social Media + Society.
+  journal: Social Media + Society
   doi: https://doi.org/10.1177/20563051211063465
 
 conferences:
@@ -66,6 +66,10 @@ public:
   coauths: Co-authors - Dr. Jennifer Stromer-Galley, Dr. Brian McKernan
 
 research:
+- title: Data Analyst
+  date: 03-2022 — 05-2023
+  location: University of Pennsylvania, Philadelphia PA
+  org: Castleman Disease Collaborative Network
 - title: Graduate Research Assistant
   date: 06-2018 — 04-2021
   location: Syracuse University, Syracuse NY
@@ -80,6 +84,10 @@ research:
   org: Honors College
 
 visualizations:
+- title: Repurposing Of All Drugs, Mapping All Paths (ROADMAP) project
+  date: 04-2023
+  location: University of Pennsylvania, Philadelphia PA
+  org: Castleman Disease Collaborative Network
 - title: Magazine cover (network visualization)
   date: 03-2019
   location: Syracuse University, Syracuse NY
@@ -128,6 +136,10 @@ teaching:
   org: WGS 210 - Gender and the Body
 
 grants:
+- title: iSchool Summer Doctoral Research Funding Competition 
+  date: Summer 2023
+  location: Syracuse University, Syracuse NY 
+  org: School of Information Studies
 - title: Special Research Grant 
   date: Spring 2018
   location: Syracuse University, Syracuse NY 
@@ -171,16 +183,16 @@ honors:
 - title: Research Excellence Doctoral Funding Fellowship
   date: 2022
   location: Syracuse University, Syracuse NY
-  org: <small><b>Description</b> - “The <a href = "https://graduateschool.syr.edu/about/awards/research-excellence-doctoral-funding-program/" target = "blank"> Research Excellence Doctoral Funding (REDF) Program</a> is focused on supporting approximately 30 doctoral fellowships per year, funded through the Invest Syracuse initiative and administered by the Graduate School.” </small>
+  org: <i>Description</i> - “The <a href = "https://graduateschool.syr.edu/about/awards/research-excellence-doctoral-funding-program/" target = "blank"> Research Excellence Doctoral Funding (REDF) Program</a> is focused on supporting approximately 30 doctoral fellowships per year, funded through the Invest Syracuse initiative and administered by the Graduate School.” 
 - title: Kingston-Mann Student Achievement in Diversity/Inclusion Scholarship
   date: 2016
   location: University of Massachusetts Boston, Boston MA
-  org: <small><b>Submission</b> - “Mainstream Media Representations of Violence in Ferguson, Missouri.” <br> <b>Description</b> - "Recognizing that students can be producers as well as receivers of research and knowledge, the <a href = "https://www.umb.edu/km-awards/about" target = "blank"> Kingston-Mann awards</a> reward and celebrate undergraduate research that focuses on issues of diversity and inclusion. The awards are intended to encourage students to discover their potential as researchers." </small>
+  org: <i>Submission</i> - “Mainstream Media Representations of Violence in Ferguson, Missouri.” <br> <i>Description</i> - "Recognizing that students can be producers as well as receivers of research and knowledge, the <a href = "https://www.umb.edu/km-awards/about" target = "blank"> Kingston-Mann awards</a> reward and celebrate undergraduate research that focuses on issues of diversity and inclusion. The awards are intended to encourage students to discover their potential as researchers." 
 - title: Beacon Student Success Fellowship
   date: 2015
   location: University of Massachusetts Boston, Boston MA
-  org: <small><b>Description</b> - Received a grant to fund a trip to Bilbao and Madrid, Spain where I assisted Professor Alan Stoskopf with his interdisciplinary curriculum development and his research on representations of peace and violence in the Basque Conflict and Spanish Civil War.</small>
+  org: <i>Description</i> - Received a grant to fund a trip to Bilbao and Madrid, Spain, to assist Professor Alan Stoskopf with his interdisciplinary curriculum development and his research on representations of peace and violence in the Basque Conflict and Spanish Civil War.
 - title: Honors College Classroom Leadership Award
   date: 2015
   location: University of Massachusetts Boston, Boston MA
-  org: <small><b>Course</b> - "National Narratives of War and Peace in a Changing World" <br> <b>Description</b> - Nominated students "exhibited not only an authentic engagement with her/his own learning, but also effective, sustained, and enlightened leadership in contributing to the learning of others."</small>
+  org: <i>Course</i> - "National Narratives of War and Peace in a Changing World" <br> <i>Description</i> - Nominated students "exhibited not only an authentic engagement with her/his own learning, but also effective, sustained, and enlightened leadership in contributing to the learning of others."

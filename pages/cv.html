@@ -1,0 +1,466 @@
+---
+layout: default
+permalink: /cv
+title: "CV"
+---
+
+{% include navbar.html %}
+
+<style>
+    .navbar {
+      position:relative!important;
+    }
+
+
+    h2, section div p, section div ol, section div {
+      padding-top: 30px !important;
+    }
+    hr, h2 {
+      padding: 0;
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+    
+    @media screen and (max-width: 1199px) {
+
+h2 {
+  padding-top: none !important;
+  padding-bottom: none !important;
+margin-bottom: -20px;
+}
+}
+
+
+
+
+ @media (min-width: 1200px) {
+	 main:before {
+		 position: fixed;
+		 content: "";
+		 left: 0;
+		 top: 0;
+		 bottom: 0;
+		 right: 62%;
+		 z-index: -1;
+	}
+
+  section {
+	 margin-top: 2em;
+   display: flex;
+}
+section h2 {
+    margin-right: 50px !important;
+
+  }
+  section h2 {
+	 position: sticky;
+	 top: 0;
+	 left: 0;
+	 margin: 0;
+	 align-self: flex-start;
+   text-align: right !important;
+   font-size: 2.2rem;
+}
+ section div {
+	 flex: 1;
+}
+ section div p:first-child {
+	 margin-top: 0.4em;
+}
+ 
+}
+
+p {
+  font-size: 1rem !important;
+}
+
+.contents {
+  font-size: 14px !important;
+}
+
+.blackdot {
+  font-size: 8px;
+}
+
+.contenttitle {
+  text-decoration: none !important;
+}
+
+.pdficon {
+  height: 20px;
+  width: auto;
+}
+
+.contentspdf {
+  font-size: 12px !important;
+}
+h1 {font-weight: 800 !important;
+  font-size: 5.3rem !important; }
+
+  </style>
+
+
+<link
+href="{{site.baseurl}}/assets/css/cv.css"
+rel="stylesheet"
+/>    
+
+ 
+{% include backtotop.html %}
+<div class = "container pt-2">
+
+<div class = "row">
+  <div class = "col-xl-4">
+    
+  </div>
+  <div class = "col-xl-8">
+    <h1>Curriculum Vitae</h1>
+    <div class = "d-flex mb-3">
+      <span>
+        <a class = "contents contenttitle" style = "font-weight: 600;"><i>Contents: &nbsp; </i></a> 
+        <a class = "contents" href = "#education">Education</a> 
+        <span class = "mx-1 blackdot">●</span> 
+        <a class = "contents" href = "#publications">Publications</a>
+        <span class = "mx-1 blackdot">●</span> 
+         <a class = "contents" href = "#conferences-presentations">Conferences & Presentations</a> 
+        <span class = "mx-1 blackdot">●</span> 
+        <a class = "contents" href = "#public-scholarship">Public Scholarship</a>
+        <span class = "mx-1 blackdot">●</span> 
+         <a class = "contents" href = "#research-work">Research Work Experience</a> 
+         <span class = "mx-1 blackdot">●</span> 
+         <a class = "contents" href = "#viz">Visualizations</a> 
+         <span class = "mx-1 blackdot">●</span> 
+         <a class = "contents" href = "#teaching">Teaching</a> 
+         <span class = "mx-1 blackdot">●</span> 
+         <a class = "contents" href = "#grants">Grants</a> 
+         <span class = "mx-1 blackdot">●</span> 
+         <a class = "contents" href = "#service">Service</a> 
+         <span class = "mx-1 blackdot">●</span> 
+         <a class = "contents" href = "#honors-awards">Honors & Awards</a> 
+         <span class = "mx-1 blackdot">●</span> 
+         <a class = "contents" href = "#skills">Skills</a>  </span>
+    </div>
+    <div id="myBtnContainer">
+      <a class = "my-2 py-3 contents contentspdf" href = "{{site.baseurl}}/assets/CV-Sarah-Bolden_05-30-23.pdf" target = "_blank"><button class="btn cvbtn"> <img src = "https://img.icons8.com/?size=512&id=107446&format=png" class = "pdficon" alt = "" />&nbsp; download PDF</button></a>
+    </div>
+  
+  </div>
+</div>     
+<br>
+
+<br>
+<!-- start EDUCATION -->
+<section>
+  <div class = "row">
+    <div class = "col-xl-4">
+      
+      <h2 id = "education">Education</h2>
+      
+    </div>
+
+    <div class = "col-xl-8">
+      <p>
+        <small>2018 - 2024 (expected)</small> <br />
+        <b>Ph.D., Information Science & Technology</b> <br />
+        Syracuse University - Syracuse, NY
+      </p>
+      <p>
+        <small>2016-2018 </small><br />
+        <b>M.A., Communication And Rhetorical Studies</b> <br />
+        Syracuse University - Syracuse, NY <br />
+      </p>
+      <p>
+        <small>2012-2016</small> <br />
+        <b>B.A., Sociology; B.A., Latin American & Iberian Studies</b> <br />
+        University of Massachusetts Boston - Boston, MA
+      </p>
+    </div>
+  </div>
+</section>
+<!-- end EDUCATION -->
+
+<br>
+<br>
+
+<!-- start PUBLICATIONS -->
+<section>
+  <div class = "row">
+    <div class = "col-xl-4">
+      
+      <h2 id = "publications">Publications</h2>
+      
+    </div>
+
+    <div class = "col-xl-8">
+      
+    {% for item in site.data.cv.publications %}
+    <p>
+      {{ item.authors }}. {{ item.date }}. {{ item.title }}
+      <i>{{ item.journal }}</i>.
+      <a href="{{ item.doi }}" target="_blank">{{ item.doi }}</a>
+    </p>
+    
+    {% endfor %}
+  </div>
+
+</section>
+<!-- end PUBLICATIONS -->
+
+<br>
+<br>
+
+<!-- start CONFERENCES & PRESENTATIONS -->
+<section>
+  <div class = "row">
+    <div class = "col-xl-4">
+      
+      <h2 id = "conferences-presentations">Conferences & Presentations</h2>
+      
+    </div>
+
+    <div class = "col-xl-8">
+      {% for item in site.data.cv.conferences %}
+      <p>
+        <small>{{ item.date }}, {{ item.location }}</small> <br />
+        <b>"{{ item.title }}"</b> <br />
+        {{ item.org }}<br />
+        {{ item.coauths }}
+      </p>
+      {% endfor %}
+  
+    </div>
+  </div>
+</section>
+<!-- end CONFERENCES & PRESENTATIONS -->
+
+<br>
+<br>
+
+<!-- start PUBLIC SCHOLARSHIP -->
+<section>
+  <div class = "row">
+    <div class = "col-xl-4">
+      
+      <h2 id = "public-scholarship">Public Scholarship</h2>
+      
+    </div>
+
+    <div class = "col-xl-8">
+      {% for item in site.data.cv.public %}
+      <p>
+        <small>{{ item.date }}, {{ item.location }}</small> <br />
+        <b>"{{ item.title }}"</b> <br />
+        {{ item.org }}<br />
+        {{ item.coauths }}
+      </p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- end PUBLIC SCHOLARSHIP -->
+
+<br>
+<br>
+
+<!-- start RESEARCH WORK EXPERIENCE -->
+<section>
+  <div class = "row">
+    <div class = "col-xl-4">
+      
+      <h2 id = "research-work">Research Work Experience</h2>
+      
+    </div>
+
+    <div class = "col-xl-8">
+      {% for item in site.data.cv.research %}
+      <p>
+        <small>{{ item.date }}, {{ item.location }}</small> <br />
+        <b>{{ item.title }}</b> <br />
+        {{ item.org }}<br />
+      </p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- end RESEARCH WORK EXPERIENCE -->
+
+<br>
+<br>
+
+<!-- start VIZ -->
+<section>
+  <div class = "row">
+    <div class = "col-xl-4">
+      
+      <h2 id = "viz">Visualizations</h2>
+      
+    </div>
+
+    <div class = "col-xl-8">
+      {% for item in site.data.cv.visualizations %}
+      <p>
+        <small>{{ item.date }}, {{ item.location }}</small> <br />
+        <b>{{ item.title }}</b> <br />
+        {{ item.org }}<br />
+      </p>
+      {% endfor %}
+  
+    </div>
+  </div>
+</section>
+<!-- end VIZ -->
+
+<br>
+<br>
+
+<!-- start TEACHING -->
+<section>
+  <div class = "row">
+    <div class = "col-xl-4">
+      
+      <h2 id = "teaching">Teaching</h2>
+      
+    </div>
+
+    <div class = "col-xl-8">
+      {% for item in site.data.cv.teaching %}
+    <p>
+      <small>{{ item.date }}, {{ item.location }}</small> <br />
+      <b>{{ item.title }}</b> <br />
+      {{ item.org }}<br />
+    </p>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- end TEACHING -->
+
+<br>
+<br>
+
+<!-- start GRANTS -->
+<section>
+  <div class = "row">
+    <div class = "col-xl-4">
+      
+      <h2 id = "grants">Grants</h2>
+      
+    </div>
+
+    <div class = "col-xl-8">
+      {% for item in site.data.cv.grants %}
+      <p>
+        <small>{{ item.date }}, {{ item.location }}</small> <br />
+        <b>{{ item.title }}</b> <br />
+        {{ item.org }}<br />
+      </p>
+      {% endfor %}
+  
+    </div>
+  </div>
+</section>
+<!-- end GRANTS -->
+
+<br>
+<br>
+    
+<!-- start SERVICE -->
+<section>
+  <div class = "row">
+    <div class = "col-xl-4">
+      
+      <h2 id = "service">Service</h2>
+      
+    </div>
+
+    <div class = "col-xl-8">
+      {% for item in site.data.cv.service %}
+      <p>
+        <small>{{ item.date }}, {{ item.location }}</small> <br />
+        <b>{{ item.title }}</b> <br />
+        {{ item.org }}<br />
+      </p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- end SERVICE -->
+
+<br>
+<br>
+
+<!-- start HONORS & AWARDS -->
+<section>
+  <div class = "row">
+    <div class = "col-xl-4">
+      
+      <h2 id = "honors-awards">Honors & Awards</h2>
+      
+    </div>
+
+    <div class = "col-xl-8">
+      {% for item in site.data.cv.honors %}
+      <p>
+        <small>{{ item.date }}, {{ item.location }}</small> <br />
+        <b>{{ item.title }}</b> <br />
+        {{ item.org }}<br />
+      </p>
+      {% endfor %}
+      </div>
+  </div>
+</section>
+<!-- end HONORS & AWARDS -->
+
+<br>
+<br>
+
+<!-- start SKILLS -->
+<section>
+  <div class = "row">
+    <div class = "col-xl-4">
+      
+      <h2 id = "skills">Skills</h2>
+      
+    </div>
+
+    <div class = "col-xl-8 ">
+      <p class = "mb-2"><b>Foreign languages</b></p>
+      <ul>
+        <li>Spanish (fluent)</li>
+        <li>French (working proficiency)</li>
+      </ul>
+      
+      <p class = "mb-2"><b>Research methods</b></p>
+      <ul>
+        <li>Content analysis</li>
+        <li>Rhetorical criticism</li>
+        <li>Social network analysis </li>
+        <li>Survey design/analysis </li>
+      </ul>
+
+      <p class = "mb-2"><b>Research tools</b></p>
+      <ul>
+        <li>Qualtrics</li>
+        <li>Nvivo</li>
+        <li>Atlas.ti </li>
+      </ul>
+
+      <p class = "mb-2"><b>Programming</b></p>
+      <ul>
+        <li>R</li>
+        <li>JavaScript </li>
+        <li>Python </li>
+      </ul>
+      
+      <p class = "mb-2"><b>Design</b></p>
+      <ul>
+        <li>Adobe Suite</li>
+        <li>Figma</li>
+        <li>HTML/CSS </li>
+        <li>RStudio</li>
+        <li>Tableau </li>
+      </ul>
+            </div>
+  </div>
+</section>
+<!-- end SKILLS -->

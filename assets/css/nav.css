@@ -1,0 +1,147 @@
+.navbar-collapse {
+    background-color: white !important;
+}
+
+.navbar,
+.logo_container,
+.collapse .navbar-na, .navcv, .navportfolio {
+    height: 80px;
+}
+
+nav .container-fluid {
+    border-bottom: 1px solid black;
+}
+
+nav .logo_container {
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navlogo, .navcv, .navportfolio {
+    color: #4e4e4e ;
+}
+
+.navcv, .navportfolio {
+    font-size: 1rem;
+    font-family: var(--main_font);
+
+}
+
+.collapse .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+    padding-left: 20px;
+}
+
+.navcv {
+    padding-left: 24px !important;
+    padding-right: 34px !important;
+    margin-left: -20px !important;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navportfolio {
+    border-right: 1px solid black;
+    font-family: var(--main_font) !important;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navicon1 {
+    padding-left: 20px;
+}
+
+.navicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.logo_container {
+    margin-left: -12px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 15px;
+}
+
+.logo_container:hover,
+.navportfolio:hover,
+.navcv:hover {
+    background-color: var(--accent_color);
+}
+
+.navlogo, .navcv, .navportfolio {
+    color: #4e4e4e ;
+}
+
+.navbar-nav .navcv:hover li {
+    color: white !important;
+}
+
+.navbar-nav .navportfolio:hover li {
+    color: white !important;
+}
+.container-fluid .logo_container:hover p {
+    color: white !important;
+
+}
+.navicon a:hover,
+.fa-brands:hover,
+.ai:hover,
+a:hover {
+    color: var(--accent_color);
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    nav .container-fluid,
+    nav .logo_container,
+    .navcv,
+    .navportfolio {
+        border: none !important;
+    }
+
+    .navicon1 {
+        padding-left: 0px !important;
+
+    }
+
+    .collapse .navbar-nav {
+        height: calc(100vh - 80px) !important;
+        transition: 0s !important;
+        border-left: none !important;
+
+    }
+
+    .icon {
+        height: 40px !important;
+        width: 40px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .navportfolio,
+    .navcv {
+        height: auto !important;
+    }
+}
